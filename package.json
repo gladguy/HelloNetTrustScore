@@ -1,0 +1,29 @@
+{
+  "name": "HelloNetTrustScore",
+  "version": "1.0.0",
+  "description": "HelloNet TrustScore",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HelloNetProtocol",
+    "HelloToken"
+  ],
+  "author": "Waheed Rahuman",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "zeppelin-solidity": "^1.11.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}
