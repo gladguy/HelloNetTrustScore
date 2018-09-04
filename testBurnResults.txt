@@ -1,0 +1,47 @@
+Using network 'development'.
+
+
+[0m[0m
+[0m  Contract: BurnableToken[0m
+[0m    when the given amount is not greater than balance of the sender[0m
+    [32m  √[0m[90m burns the requested amount[0m[33m (47ms)[0m
+    [32m  √[0m[90m emits a burn event[0m
+    [32m  √[0m[90m emits a transfer event[0m
+[0m    when the given amount is greater than the balance of the sender[0m
+    [32m  √[0m[90m reverts[0m[33m (72ms)[0m
+[0m    pause[0m
+[0m      when the sender is the token owner[0m
+[0m        when the token is unpaused[0m
+        [32m  √[0m[90m pauses the token[0m[31m (179ms)[0m
+        [32m  √[0m[90m emits a Pause event[0m[31m (99ms)[0m
+[0m        when the token is paused[0m
+        [32m  √[0m[90m pause reverts[0m[31m (102ms)[0m
+        [32m  √[0m[90m burn tokens reverts[0m[31m (89ms)[0m
+[0m        when the sender is not the token owner[0m
+        [32m  √[0m[90m reverts[0m[33m (70ms)[0m
+[0m    unpause[0m
+[0m      when the sender is the token owner[0m
+[0m        when the token is paused[0m
+        [32m  √[0m[90m unpauses the token[0m[31m (98ms)[0m
+        [32m  √[0m[90m emits an Unpause event[0m[31m (79ms)[0m
+[0m        when the token is unpaused[0m
+        [32m  √[0m[90m reverts[0m[33m (54ms)[0m
+[0m      when the sender is not the token owner[0m
+      [32m  √[0m[90m reverts[0m[33m (62ms)[0m
+[0m    pausable token[0m
+[0m      paused[0m
+      [32m  √[0m[90m is not paused by default[0m
+      [32m  √[0m[90m is paused after being paused[0m[31m (108ms)[0m
+      [32m  √[0m[90m is not paused after being paused and then unpaused[0m[31m (180ms)[0m
+[0m    transfer[0m
+    [32m  √[0m[90m allows to transfer when unpaused[0m[31m (142ms)[0m
+    [32m  √[0m[90m allows to transfer when paused and then unpaused[0m[31m (290ms)[0m
+    [32m  √[0m[90m reverts when trying to transfer when paused[0m[31m (168ms)[0m
+[0m    approve[0m
+    [32m  √[0m[90m allows to approve when unpaused[0m[31m (101ms)[0m
+    [32m  √[0m[90m allows to transfer when paused and then unpaused[0m[31m (355ms)[0m
+    [32m  √[0m[90m reverts when trying to transfer when paused[0m[31m (189ms)[0m
+
+
+[92m [0m[32m 22 passing[0m[90m (8s)[0m
+
