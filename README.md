@@ -1,6 +1,9 @@
-# Project
-
-Simple Ethereum token
+# HelloNetTrustScore
+Non-transferable token and credited by the network based on the work accomplished
+* Token can be earned based on the credit
+* Token is not transferable by the receiver
+* Token is not tradable by the receiver
+* Token is awarded based on the client
 
 ## Getting Started
 
@@ -149,7 +152,7 @@ Add additional notes about how to deploy this on a live system
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
-
+K.Waheed Rahuman
 
 
 ## License
