@@ -1,11 +1,11 @@
 /**
-Copyright [2018] [HelloToken TrustScore]
+Copyright [2018] [HelloToken.io]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -21,12 +21,12 @@ import "zeppelin-solidity/contracts/token/ERC20/PausableToken.sol";
 import "zeppelin-solidity/contracts/math/SafeMath.sol";
 
 /**
- @title TrustScore
+ @title HelloNetTrustScrore
 
 */
 
-contract TokenNET is Ownable, PausableToken {
-    string constant public name = "HelloNet TrustScore";
+contract HelloNetTrustScrore is Ownable, PausableToken {
+    string constant public name = "HelloNet Trust Score";
     string constant public symbol = "HTS";
     // solhint-disable-next-line
     uint8 constant public decimals = 18; // 18 decimals is the strongly suggested default, avoid changing it
@@ -74,7 +74,7 @@ contract TokenNET is Ownable, PausableToken {
         _burn(_from, _value);
     }
 
-    function _burn(address _who, uint256 _value) internal whenNotPaused{
+    function _burn(address _who, uint256 _value) internal whenNotPaused {
         require(_value <= balances[_who]);
       // no need to require value <= totalSupply, since that would imply the
       // sender's balance is greater than the totalSupply, which *should* be an assertion failure
